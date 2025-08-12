@@ -700,25 +700,437 @@ img {
 
 }
 /* ....................pppppppppppppppppp */
-
-/* All elements are visible and in their default position */
-.entity.box {
-  animation: none; /* Initially, no animation is running */
+/* 1 */
+.my-box {
+  /* width: 100px;
+  height: 100px;
+  background-color: dodgerblue; */
+  /* Ensure the animation is not running by default */
+  animation-name: none;
 }
 
-/* This class will be added by JavaScript to start the animation */
-.is-visible {
-  animation: moveAndBounce 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+/* This class will be added by JavaScript to trigger the animation */
+.my-box.animate {
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1; /* Play the animation once */
+  animation-delay: .1s;
+  opacity:.5;
 }
 
-@keyframes moveAndBounce {
+/* The keyframe animation definition */
+@keyframes myAnimation {
   0% {
-    transform: translate3d(0, 0, 0); /* Start at the original position */
+    transform: translateY(0);
   }
   50% {
-    transform: translate3d(0, 50px, 0); /* Move down to the lowest point */
+    transform: translateY(170px);
   }
   100% {
-    transform: translate3d(0, 0, 0); /* Bounce back up to the original position */
+    transform: translateY(0);
   }
 }
+/* 2 */
+.my-box1 {
+  /* width: 100px;
+  height: 100px;
+  background-color: dodgerblue; */
+  /* Ensure the animation is not running by default */
+  animation-name: none;
+}
+
+/* This class will be added by JavaScript to trigger the animation */
+.my-box1.animate {
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+   animation-delay: .5s;
+  animation-iteration-count: 1; /* Play the animation once */
+}
+
+/* The keyframe animation definition */
+@keyframes myAnimation1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(180px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* 3 */
+.my-box2 {
+  /* width: 100px;
+  height: 100px;
+  background-color: dodgerblue; */
+  /* Ensure the animation is not running by default */
+  animation-name: none;
+}
+
+/* This class will be added by JavaScript to trigger the animation */
+.my-box2.animate {
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+   animation-delay: .8s;
+  animation-iteration-count: 1; /* Play the animation once */
+}
+
+/* The keyframe animation definition */
+@keyframes myAnimation2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(190px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* 4 */
+.my-box3 {
+  animation-name: none;
+}
+
+/* This class will be added by JavaScript to trigger the animation */
+.my-box3.animate {
+  animation-name: myAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+   animation-delay: 1s;
+  animation-iteration-count: 1; /* Play the animation once */
+}
+
+/* The keyframe animation definition */
+@keyframes myAnimation3 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* boxes */
+.boxes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ................................................................................................ */
+.bg-simple-div.white {
+    background-color: white;
+    height: 40px;
+} 
+.contact-lux h2 {
+    text-align: center;
+    max-width: 700px;
+    color: #cbae86 !important;
+}
+.contact-lux .upr-para {
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+.contact-lux .innr {
+    padding: 10px 25px;
+    /* padding: 10px 25px; */
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #cbae86;
+    box-shadow: 0 3px 10px rgba(203, 174, 134, 0.9);
+    color: #161c2f !important;
+}
+.contact-lux .innr .img-div {
+    max-width: 120px;
+    margin: 0 auto 15px auto;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--bs-heading-color, inherit);
+}
+.contact-lux h3 {
+    font-family: var(--primary-font);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #161c2f;
+    text-align: center;
+}
+.contact-lux .innr p {
+    font-size: 16px;
+    color: #66696f;
+    font-family: circular;
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.contact-lux .btn-wkhra {
+    padding: 40px;
+}
+.contact-lux .btn-wkhra button {
+    color: #161c2f;
+    background-color: #cbae86;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    padding: 20px 75px 20px 74px;
+    font-size: 18px;
+    font-family: var(--primary-font);
+}
+/* animation start  */
+
+/*------------------ 1------------ */
+.my-box4 {
+  animation-name: none;
+}
+
+/* class- animate-part2 */ 
+.my-box4.animate-part2 {
+  animation-name: myAnimation4;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+   animation-delay: .3s;
+  animation-iteration-count: 1; 
+}
+
+/* The keyframe animation definition */
+@keyframes myAnimation4 {
+  /* 0% {
+    transform: translateY(0);
+  } */
+  50% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/*------------------ 2 ------------ */
+
+.my-box5 {
+  animation-name: none;
+}
+
+/* class- animate-part2 */ 
+.my-box5.animate-part2 {
+  animation-name: myAnimation4;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+   animation-delay: .5s;
+  animation-iteration-count: 1; 
+}
+/*------------------ 3 ------------ */
+
+
+.my-box6 {
+  animation-name: none;
+}
+
+/* class- animate-part2 */ 
+.my-box6.animate-part2 {
+  animation-name: myAnimation4;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+   animation-delay: .7s;
+  animation-iteration-count: 1; 
+}
+
+
+
+
+/* end of animation */
+.contact-lux .contact-map {
+    background: inherit;
+    padding: 0;
+    border-radius: 0;
+}
+.contact-lux .contact-map {
+    background: inherit;
+    padding: 0;
+    border-radius: 0;
+}
+.contact-lux .contact-map h2 {
+    max-width: 100%;
+} 
+.contact-map h2 {
+    font-size: 48px;
+    line-height: 46px;
+    color: #cbae86;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact-map .grid {
+    display: grid;
+    grid-template-columns: 8fr 3fr;
+}
+.contact-map .map-here iframe {
+    width: 100%;
+    min-height: 300px;
+    max-height: 700px;
+    height: 100%;
+}
+.contact-map .inr-wrap {
+    margin-left: -20px;
+    padding: 2.5em 40px;
+    background-color: #cbae86;
+    border-radius: 0 0 50px 0;
+    color: #161c2f;
+}
+.contact-lux h3 {
+    font-family: norm;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #161c2f;
+    text-align: center;
+}
+.contact-lux .contact-map h3 {
+    color: #161c2f;
+    font-size: 1.75rem;
+    text-align: start;
+}
+.contact-map .time-book {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #161c2f;
+}
+.contact-map .time-book p {
+    margin-bottom: 0;
+}
+.contact-map .time-book p {
+    margin-bottom: 0;
+}
+.contact-map .wrap {
+    max-width: 1200px;
+    margin: auto;
+}
+.contact-lux {
+    background-color: #161c2f;
+    padding: 100px 15px;
+    border-radius: 125px 125px 0px 0px;
+}
+.contact-lux .innr p a {
+    font-size: 16px;
+    color: #66696f;
+    font-family: circular;
+    text-align: center;
+}
+.contact-lux .innr p {
+    font-size: 16px;
+    color: #66696f;
+    font-family: circular;
+    text-align: center;
+}
+.contact-map .c-here {
+    padding: 60px 0;
+}
+/* footer */
+footer {
+    background-color: #cbae86;
+    color: #161c2f;
+    padding: 10px 15px;
+}
+.wrap {
+    max-width: 1600px;
+    margin: auto;
+}
+footer p {
+    color: #161c2f;
+    /* font-family: "Roboto", Sans-serif; */
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.contact-lux .btn-wkhra {
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* preloader */
+.preloaderBg {
+    position: fixed;
+    z-index: 100000000;
+    top: 0;
+    background: #161c2f;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.preloader-wrap {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background: url(/assets/a-images/wdlogo.webp);
+    background-size: 110px 110px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}  
+    .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 230px;
+        height: 230px;
+        margin: 8px;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-color: #cbae86 transparent white transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+
+    @keyframes lds-dual-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }

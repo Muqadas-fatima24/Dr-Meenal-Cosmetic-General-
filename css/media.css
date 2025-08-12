@@ -425,3 +425,92 @@ body.body-nav {
         justify-content: center;
     }
 }
+@media (max-width: 850px) {
+    .contact-map .grid {
+        grid-template-columns: 1fr !important;
+    }
+    .contact-map .map-here {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 991px) {
+    .bespoke-beautiful .grid {
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
+    }
+    .bespoke-beautiful .upr-para p {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-family: var(--primary-font);
+    color: #161c2f !important;
+    font-weight: 300;
+}
+.bespoke-beautiful .upr-para p b {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 0;
+    font-family: var(--primary-font);
+    color: #161c2f !important;
+    font-weight: 300;
+}
+.contact-lux .upr-para {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+}
+@media (max-width: 850px) {
+    .contact-map .c-here {
+        padding: 0 !important;
+    }
+}
+@media (max-width: 767px) {
+    .bespoke-beautiful .upr-para p {
+        font-size: 20px;
+    }
+        .bespoke-beautiful .grid {
+        grid-template-columns: 1fr;
+    }
+        h1, h2 {
+        font-size: 22px;
+    }
+    .contact-lux .upr-para {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+    .contact-lux {
+        padding: 50px 15px;
+        border-radius: 50px 50px 0px 0px;
+    }
+        .contact-lux .upr-para {
+        font-size: 20px;
+    }
+    .contact-lux .upr-para {
+        font-size: 20px;
+    }
+    .contact-map h2 {
+    font-size: 30px;
+    line-height: 46px;
+    color: #cbae86;
+    margin-bottom: 30px;
+    text-align: center;
+}
+    .bespoke-beautiful .btn-center button {
+        padding: 10px 30px;
+    }
+    footer p {
+    color: #161c2f;
+    /* font-family: "Roboto", Sans-serif; */
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    }
+}
