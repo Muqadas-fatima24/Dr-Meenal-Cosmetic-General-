@@ -519,3 +519,30 @@ body.body-nav {
         margin-bottom: 70px;
     }
 }
+@media (max-width: 850px) {
+    .contact-map {
+        padding: 15px;
+        /* margin-bottom: 15px; */
+    }
+    .contact-map .inr-wrap {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+@media (max-width: 767px) {
+    .smile-header h2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .contact-section .row {
+        padding: 30px 15px;
+    }
+        .contact-map {
+        padding: 50px 15px;
+        border-radius: 50px 50px 0px 0px;
+    }
+    .contact-section .row .col-lg-5 {
+    margin-bottom: 1rem !important;
+    padding: 0px !important;
+}
+}
