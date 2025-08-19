@@ -58,3 +58,49 @@ $(window).on('load', function() {
  
 </script>
 
+</script>
+
+<!-- form popup -->
+        <div class="error-popup" id="error-popup" style="display: none;">
+            <div class="popup-wrap">
+                <div class="hide-popup" onclick="hidePopup()">
+                    x
+                </div>
+                <div class="popup-text">
+                    Form has been submitted Successfully
+                </div>
+            </div>
+        </div>
+        <!-- script of popup -->
+<script>
+    function hidePopup() {
+        document.getElementById('error-popup').style.display = "none";
+        location.reload();
+    } 
+</script>
+<!-- for banner carousel left side of vedio -->
+ <script>
+    $(document).ready(function(){
+  $(".nitime-car").owlCarousel({
+    items: 1, 
+    loop: true, 
+    autoplay: true,
+    autoplayTimeout: 3000, 
+    autoplayHoverPause: true,
+    nav: false, 
+    dots: false,
+
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  });
+});
+ </script>

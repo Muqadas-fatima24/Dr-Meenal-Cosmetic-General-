@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <!-- link for icons  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-
-    <!-- carousel files -->
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <!-- links for bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
-    <!-- links for css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <!-- font families -->
-     <link href="https://fonts.cdnfonts.com/css/tex-gyre-adventor" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">           
-
-       
-       <!-- ------- -->
-</head>
+<?php
+  $home = "active"; 
+  $pageTitle = "Home | DOCTOR MEENAL PATEL";
+  include_once "head.php";   
+?>
 <body>
 
 
@@ -53,7 +25,7 @@
                 
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src="assets/a-images/logo-svg-dimension.webp" alt="">
                     </a>
                     <button class="navbar-toggler" id="navbar-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,14 +35,14 @@
                     </button>
                     <div class="collapse lateral-left navbar-collapse" id="navbarSupportedContent">
                         <div class="logo-div d-lg-none d-block">
-                            <a href="index.html"> <img id="nav-logo" src="assets/a-images/logo-color-s.webp" alt=""></a>
+                            <a href="index.php"> <img id="nav-logo" src="assets/a-images/logo-color-s.webp" alt=""></a>
                         </div>
                         <ul class="navbar-nav m-lg-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#aboutMenaal">About Us</a>
+                                <a class="nav-link" href="index.php#aboutMenaal">About Us</a>
                             </li>
                             <li class="nav-item dropdown dropdown-5">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
@@ -429,108 +401,10 @@
 
 </main>
 
-
 <!-- footer -->
-
-<footer>
-    <div class="wrap">
-        <p class="text-center">© <span id="yearFooter">2024</span> DR MEENAL PATEL - ALL RIGHTS RESERVED / SITE LAST UPDATED 31/12/2023 <span> &nbsp; |  &nbsp; <a href="privacy-policy.php" style="color:#161c2f">PRIVACY &amp; COOKIE POLICY</a></span></p>
-<!--        <p class="text-center mb-0"> <a href="privacy-policy.php" style="color:#161c2f">PRIVACY &amp; COOKIE POLICY</a></p>-->
-    </div>
-</footer>
-
-
-        <!-- JAVASCRIPT FILES LINK -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-    $("#puts-need-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        dots: false,
-        autoplay: true,
-        autoplayTimeout: 3000, // Changed to a faster timing (3 seconds)
-        items: 1, // Ensures only one item is shown at a time
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-});
-    </script>
-    <!-- kkkkkkkkkkkkkkkkkkkkkkkkppppppppppppppppp -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-     <!-- ppppppppppppppppppppppppppppppppppppppppp -->
-
-
-<!-- preloader -->
- <script>
-$(window).on('load', function() {
-    $('#preloader-Bg').delay(50).fadeOut('fast'); 
-    $('html').css({
-        'overflow-y': 'auto'
-    });
-});
- 
-</script>
-
-<!-- form popup -->
-        <div class="error-popup" id="error-popup" style="display: none;">
-            <div class="popup-wrap">
-                <div class="hide-popup" onclick="hidePopup()">
-                    x
-                </div>
-                <div class="popup-text">
-                    Form has been submitted Successfully
-                </div>
-            </div>
-        </div>
-        <!-- script of popup -->
-<script>
-    function hidePopup() {
-        document.getElementById('error-popup').style.display = "none";
-        location.reload();
-    } 
-</script>
-<!-- for banner carousel left side of vedio -->
- <script>
-    $(document).ready(function(){
-  $(".nitime-car").owlCarousel({
-    items: 1, 
-    loop: true, 
-    autoplay: true,
-    autoplayTimeout: 3000, 
-    autoplayHoverPause: true,
-    nav: false, 
-    dots: false,
-
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 1
-      },
-      1000: {
-        items: 1
-      }
-    }
-  });
-});
- </script>
+ <section>
+<?php include_once "footer.php" ?>
+</section>
 
 </body>
 </html>

@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: column;
     /* height: 100vh; */
-    background: url(/assets/a-images/index-header.webp);
+    background: url(../assets/a-images/index-header.webp);
     background-size: cover;
     z-index:-1;
     width:100%;
@@ -200,11 +200,6 @@ img {
 .main-nav .two-btns a span {
     margin-right: 7px;
 }
-/* toggler styling */
-/* .navbar-toggler {
-    border: none !important;
-    box-shadow: none !important;
-} */
 
 
 .main-nav a.nav-link {
@@ -1083,7 +1078,7 @@ html {
     display: inline-block; 
     width: 250px;
     height: 250px;
-    background: url(/assets/a-images/wdlogo.webp);
+    background: url(../assets/a-images/wdlogo.webp);
     background-size: 110px 110px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -1231,7 +1226,7 @@ article {
     box-shadow: 0 0px 6px rgba(0, 0, 0, 0.12);
 }
 .contact-section .inner {
-    background: url(/assets/a-images/contact-bg.jpg);
+    background: url(../assets/a-images/contact-bg.jpg);
     height: 100%;
     background-size: cover;
     border-radius: 30px;
@@ -1403,7 +1398,7 @@ box-shadow: none !important;
 
 .form-control.valid-custom {
     border-color: #28a745 !important;
-    background-image: url(/assets/a-images/checkmark.svg) !important;
+    background-image: url(../assets/a-images/checkmark.svg) !important;
     background-repeat: no-repeat !important;
     background-position: right 0.75rem center !important;
     background-size: 1em auto !important;   
@@ -1412,7 +1407,7 @@ box-shadow: none !important;
 .form-control.invalid-custom {
     border-color: red !important;
     padding-right: calc(1.5em + .75rem);
-    background-image: url(/assets/a-images/crossmark.svg) !important;
+    background-image: url(../assets/a-images/crossmark.svg) !important;
     background-repeat: no-repeat;
     background-position: right calc(.375em + .1875rem) center;
     background-size: calc(.75em + .375rem) calc(.75em + .375rem);
@@ -1431,7 +1426,7 @@ box-shadow: none !important;
 
 /* treatments-------------------------------------------- */
 .services-header {
-    background: url(/assets/a-images/treatments-header1.webp);
+    background: url(../assets/a-images/treatments-header1.webp);
     background-size: cover;
     background-position: right;
 }
@@ -2322,3 +2317,29 @@ box-shadow: none !important;
 .animate-right{
     opacity: 0;
 }
+
+.page-content .font-weight-bold {
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--secondry-font);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

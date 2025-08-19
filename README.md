@@ -1,1 +1,0 @@
-# Dr-Meenal-Cosmetic-General-

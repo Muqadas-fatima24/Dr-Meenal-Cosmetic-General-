@@ -1,6 +1,6 @@
 <?php
   $home = "active"; 
-  $pageTitle = "Home | Doc MEENAL PATEL";
+  $pageTitle = "Home | Doctor MEENAL PATEL";
   include_once "head.php";   
 ?>
 <!-- head end -->
@@ -535,5 +535,6 @@
  <section>
 <?php include_once "footer.php" ?>
 </section>
+
 </body>
 </html>

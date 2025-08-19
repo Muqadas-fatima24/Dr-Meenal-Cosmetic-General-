@@ -13,7 +13,7 @@
                 
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="index.php">
                         <img src="assets/a-images/logo-svg-dimension.webp" alt="">
                     </a>
                     <button class="navbar-toggler" id="navbar-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,14 +23,14 @@
                     </button>
                     <div class="collapse lateral-left navbar-collapse" id="navbarSupportedContent">
                         <div class="logo-div d-lg-none d-block">
-                            <a href="index.html"> <img id="nav-logo" src="assets/a-images/logo-color-s.webp" alt=""></a>
+                            <a href="index.php"> <img id="nav-logo" src="assets/a-images/logo-color-s.webp" alt=""></a>
                         </div>
                         <ul class="navbar-nav m-lg-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#aboutMenaal">About Us</a>
+                                <a class="nav-link" href="index.php#aboutMenaal">About Us</a>
                             </li>
                             <li class="nav-item dropdown dropdown-5">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
@@ -69,3 +69,5 @@
 
     <!-- 2 -->
    <div class="khail-div"></div>
+
+   
