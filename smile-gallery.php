@@ -5,7 +5,7 @@
 ?>
 <!-- head end -->
 
-<body>
+<body style="overflow:hidden">
 <header class="smile-header" id="is-sticky">
 
 <!-- preloader -->
