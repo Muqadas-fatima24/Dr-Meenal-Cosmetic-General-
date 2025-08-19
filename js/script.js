@@ -81,29 +81,29 @@ myBoxes.forEach(box => {
 });
 
 // three cards-3
-document.addEventListener("DOMContentLoaded", function() {
+// document.addEventListener("DOMContentLoaded", function() {
 
-// Select all the elements you want to animate
-const myBoxes = document.querySelectorAll('.my-box4, .my-box5, .my-box6');
+// // Select all the elements you want to animate
+// const myBoxes = document.querySelectorAll('.my-box4, .my-box5, .my-box6');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    // If the element is visible in the viewport
-    if (entry.isIntersecting) {
-      // Add the 'animate' class to start the animation
-      entry.target.classList.add('animate-part2');
-    } else {
-      // If the element is not in the viewport, remove the class to reset ite
-      entry.target.classList.remove('animate-part2');
-    }
-  });
-});
+// const observer = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     // If the element is visible in the viewport
+//     if (entry.isIntersecting) {
+//       // Add the 'animate' class to start the animation
+//       entry.target.classList.add('animate-part2');
+//     } else {
+//       // If the element is not in the viewport, remove the class to reset ite
+//       entry.target.classList.remove('animate-part2');
+//     }
+//   });
+// });
 
-// Loop through each box and tell the observer to watch it
-myBoxes.forEach(box => {
-  observer.observe(box);
-});
-});
+// // Loop through each box and tell the observer to watch it
+// myBoxes.forEach(box => {
+//   observer.observe(box);
+// });
+// });
 
 // for smoothness
 document.querySelectorAll('a.smooth-scroll[href^="#"]').forEach(anchor => {
@@ -222,4 +222,221 @@ document.addEventListener('DOMContentLoaded', function() {
         popup.style.display = 'none';
         location.reload();
     };
+});
+
+// accordion
+
+document.addEventListener("DOMContentLoaded", function() {
+
+// Select all the elements you want to animate
+const myBoxes = document.querySelectorAll('.party1, .party2, .party3, .party4');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // If the element is visible in the viewport
+    if (entry.isIntersecting) {
+      // Add the 'animate' class to start the animation
+      entry.target.classList.add('animate-parts');
+    } else {
+      // If the element is not in the viewport, remove the class to reset ite
+      entry.target.classList.remove('animate-parts');
+    }
+  });
+});
+
+// Loop through each box and tell the observer to watch it
+myBoxes.forEach(box => {
+  observer.observe(box);
+});
+});
+
+// for play button opacity
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    const video = document.getElementById('video');
+    const playButton = document.getElementById('circle-play-b');
+   // 1. 
+ playButton.addEventListener('click', function() {
+    if (video.paused) {
+       
+        video.play();
+    } else {
+      
+        video.pause();
+    }
+});
+  // 2.
+    video.addEventListener('play', function() {
+        playButton.style.opacity = '0';
+    });
+
+    // 3. 
+    video.addEventListener('pause', function() {
+        playButton.style.opacity = '1';
+    });
+});
+
+// to show pati
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the element you want to animate
+    const patiDiv = document.querySelector('#pati');
+
+    // Create a new Intersection Observer
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the animation class when the element is in view
+                patiDiv.classList.add('animate-pati');
+                // Stop observing the element so the animation only runs once
+                observer.unobserve(patiDiv);
+            }
+        });
+    }, {
+        // Options for the observer
+        threshold: 0.1  // Trigger when 50% of the element is visible
+    });
+
+    // Start observing the element
+    observer.observe(patiDiv);
+});
+
+// to show pati 1
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the element you want to animate
+    const patiDiv = document.querySelector('#pati1');
+
+    // Create a new Intersection Observer
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add the animation class when the element is in view
+                patiDiv.classList.add('animate-pati1');
+                // Stop observing the element so the animation only runs once
+                observer.unobserve(patiDiv);
+            }
+        });
+    }, {
+        // Options for the observer
+        threshold: 0.1  // Trigger when 50% of the element is visible
+    });
+
+    // Start observing the element
+    observer.observe(patiDiv);
+});
+
+//  check animation
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all elements that should animate
+  const elementsToAnimate = document.querySelectorAll('.animate-on-scroll');
+
+  // Create an Intersection Observer instance
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      // If the element is visible in the viewport
+      if (entry.isIntersecting) {
+        // Add the class that triggers the animation
+        entry.target.classList.add('is-visible');
+        // Stop observing the element to ensure the animation only runs once
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    // Options for the observer: trigger when 20% of the element is visible
+    threshold: 0.15
+  });
+
+  // Start observing each element
+  elementsToAnimate.forEach(element => {
+    observer.observe(element);
+  });
+});
+
+
+// for practice 3 cards
+document.addEventListener("DOMContentLoaded", function() {
+    // Select all the elements you want to animate
+    const myBoxes = document.querySelectorAll('.my-box4, .my-box5, .my-box6');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            // If the element is visible in the viewport
+            if (entry.isIntersecting) {
+                // Add the 'animate' class to start the animation
+                entry.target.classList.add('animate-part2');
+            } else {
+                // If the element is no longer in the viewport, remove the class to reset it
+                entry.target.classList.remove('animate-part2');
+            }
+        });
+    }, {
+        // Options for the observer
+        threshold: 0.1 // You can adjust this value to your liking
+    });
+
+    // Loop through each box and tell the observer to watch it
+    myBoxes.forEach(box => {
+        observer.observe(box);
+    });
+});
+
+
+// for smile gallery<script>
+
+// contain1
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all elements that should animate
+  const elementsToAnimate = document.querySelectorAll('.animate-left');
+
+  // Create an Intersection Observer instance
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      // If the element is visible in the viewport
+      if (entry.isIntersecting) {
+        // Add the class that triggers the animation
+        entry.target.classList.add('contain1');
+        // Stop observing the element to ensure the animation only runs once
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    // Options for the observer: trigger when 20% of the element is visible
+    threshold: .3
+  });
+
+  // Start observing each element
+  elementsToAnimate.forEach(element => {
+    observer.observe(element);
+  });
+});
+
+
+
+
+// contain2
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all elements that should animate
+  const elementsToAnimate = document.querySelectorAll('.animate-right');
+
+  // Create an Intersection Observer instance
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      // If the element is visible in the viewport
+      if (entry.isIntersecting) {
+        // Add the class that triggers the animation
+        entry.target.classList.add('contain2');
+        // Stop observing the element to ensure the animation only runs once
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    // Options for the observer: trigger when 20% of the element is visible
+    threshold: .3
+  });
+
+  // Start observing each element
+  elementsToAnimate.forEach(element => {
+    observer.observe(element);
+  });
 });

@@ -11,6 +11,17 @@
     /* border-radius: 300px 0px 0px 0px; */
     background-color: #cbae86;
 }
+.long-lasting::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 30%;
+    height: calc(100% - 200px);
+    /* border-radius: 300px 0px 0px 0px; */
+    background-color: #cbae86;
+}
     
 }
 
@@ -518,6 +529,12 @@ body.body-nav {
     .before-after .row .col-lg-5:nth-child(1), .before-after .row .col-lg-4:nth-child(1) {
         margin-bottom: 70px;
     }
+    #pivat{
+        gap:2.5rem;
+    }
+    .smile-header.about-header.nitime-header .content-header {
+      margin-top: 0.4rem;
+    }
 }
 @media (max-width: 850px) {
     .contact-map {
@@ -545,4 +562,61 @@ body.body-nav {
     margin-bottom: 1rem !important;
     padding: 0px !important;
 }
+}
+@media (max-width: 1250px) {
+    .self-care .grid.grid-four {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px) {
+    .self-care .grid.grid-four {
+        grid-template-columns: 1fr;
+    }
+    .services-header .content-header h2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .faq-section button.accordion-button {
+        font-size: 20px;
+    }
+        .faq-section #head-1 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 500px) {
+    .faq-section #head-1 {
+    font-size: 20px;
+    }
+.faq-section .upper-para {
+    text-align: center;
+    font-size: 19px;
+    color: #2A221A;
+    line-height: 1;
+}
+.self-care .heading-div {
+    padding-bottom: 30px;
+}
+.self-care .heading-div h2 {
+    font-size: 46px;
+    color: white;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 0;
+}
+}
+@media (max-width: 767px) {
+    .services-header {
+        background: url(/assets/a-images/treatments-back.webp);
+    }
+        .benefits-services h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .faq-section #head-1 {
+        font-size: 28px;
+    }
+     .faq-section {
+        padding: 50px 15px;
+    }
 }

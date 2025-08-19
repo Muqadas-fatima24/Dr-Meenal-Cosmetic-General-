@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- link for icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!-- carousel files -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- links for bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <!-- links for css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <!-- font families -->
+     <link href="https://fonts.cdnfonts.com/css/tex-gyre-adventor" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">           
+
+       
+       <!-- ------- -->
+</head>
+<body>
+<header class="smile-header" id="is-sticky">
+
+<!-- preloader -->
+<div class="preloaderBg" id="preloader-Bg">
+  <div class="preloader-wrap">
+    <div class="lds-dual-ring"></div>
+  </div>
+</div>
+ <!-- loader end  -->
+
+<!-- 1 -->
+
+    <div class="page-header" id="page-header">
+        <div class="main-nav">
+            <div class="wrap">
+                
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/a-images/logo-svg-dimension.webp" alt="">
+                    </a>
+                    <button class="navbar-toggler" id="navbar-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="collapse lateral-left navbar-collapse" id="navbarSupportedContent">
+                        <div class="logo-div d-lg-none d-block">
+                            <a href="index.html"> <img id="nav-logo" src="assets/a-images/logo-color-s.webp" alt=""></a>
+                        </div>
+                        <ul class="navbar-nav m-lg-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#aboutMenaal">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown dropdown-5">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                                    Treatments
+                                </a>
+                                <ul class="dropdown-menu dropdown_menu dropdown_menu--animated dropdown_menu-5" aria-labelledby="navbarDropdown">
+                                    <li class="dropdown_item-1"><a class="dropdown-item" href="general-dentistry.php">General Dentistry</a></li>
+                                    <li class="dropdown_item-2"><a class="dropdown-item" href="nitime.php">NiTime Aligners</a></li>
+                                    <li class="dropdown_item-3"><a class="dropdown-item" href="invisalign.php">Invisalign</a></li>
+                                    <li class="dropdown_item-4"><a class="dropdown-item" href="smilefast.php">SmileFast</a></li>
+                                    <li class="dropdown_item-5"><a class="dropdown-item" href="teeth-whitening.php">Teeth Whitening</a></li>
+                                    <!-- <li class="dropdown_item-4"><a class="dropdown-item " href="teeth-whitening.php">Teeth Whitening</a></li> -->
+                                    <li class="dropdown_item-6"><a class="dropdown-item" href="veeners.php">Veeners</a></li>
+                                    <li class="dropdown_item-7"><a class="dropdown-item" href="anti-wrinkles.php">Anti Wrinkle Treatment</a></li>
+                                    <li class="dropdown_item-8"><a class="dropdown-item" href="dermal-fillers.php">Dermal Fillers</a></li>
+                                    <!-- <li class="dropdown_item-3"><a class="dropdown-item " href="clear-aligners.php">Clear Aligners</a></li>
+                                    <li class="dropdown_item-4"><a class="dropdown-item " href="emergency-dentistry.php">Emergency Dentistry</a></li> -->
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="smile-gallery.php">Smile Gallery</a>
+                            </li>
+                        </ul>
+                        <div class="two-btns">
+                            <a href="contact-us.php">
+                                <span><i class="fa-solid fa-calendar"></i></span> Get in Touch
+                            </a>
+                            <!-- <a href="tel:(08) 6183 3800"><span><i class="fa-solid fa-phone"></i></span> (08) 6183 3800</a> -->
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </div>
+
+<!-- 2 -->
+   <div class="khail-div"></div>
+<!-- 3 -->
+
+<div class="content-header">
+            <div class="wrap">
+                <h1>Smile Gallery</h1>
+            </div>
+</div>
+
+<!-- 4 -->
+
+
+
+</header>
+<!-- 
+<div class="contain-part d-flex justify-content-evenly">
+    <div class="animate-left"></div>
+     <div class="animate-right"></div>
+   
+</div>
+
+<div class="contain-part d-flex justify-content-evenly">
+    <div class="animate-left"></div>
+     <div class="animate-right"></div>
+   
+</div>
+<div class="contain-part d-flex justify-content-evenly">
+    <div class="animate-left"></div>
+     <div class="animate-right"></div>
+   
+</div>
+<div class="contain-part d-flex justify-content-evenly">
+    <div class="animate-left"></div>
+     <div class="animate-right"></div>
+   
+</div>
+<div class="contain-part d-flex justify-content-evenly">
+    <div class="animate-left"></div>
+     <div class="animate-right"></div>
+   
+</div> -->
+
+
+
+<main>
+
+<article class="before-after">
+            <div class="wrap">
+
+                                            <div class="row  panner justify-content-evenly">
+
+                                                        <div class="col-lg-4 from-left animate-left">
+                                <div class="inner">
+                                    <img src="https://cms.smile-mc.co.uk/assets/Meenal/smile/1050935384.jpg" alt="">
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 from-right animate-right">
+                                <div class="inner">
+                                    <img src="https://cms.smile-mc.co.uk/assets/Meenal/smile/2083686009.jpg" alt="">
+                                </div>
+                            </div>
+                                                        </div>
+                                            <div class="row  panner justify-content-evenly">
+
+                                                        <div class="col-lg-4 from-left animate-left">
+                                <div class="inner">
+                                    <img src="https://cms.smile-mc.co.uk/assets/Meenal/smile/584205900.jpg" alt="">
+                                </div>
+                            </div>
+                                                        <div class="col-lg-4 from-right animate-right">
+                                <div class="inner">
+                                    <img src="https://cms.smile-mc.co.uk/assets/Meenal/smile/747293316.jpg" alt="">
+                                </div>
+                            </div>
+                                                        </div>
+                                            <div class="row  panner justify-content-evenly">
+
+                                <div class="col-lg-4 from-left animate-left">
+                                <div class="inner">
+                                    <img src="https://cms.smile-mc.co.uk/assets/Meenal/smile/1617557927.jpg" alt="">
+                                </div>
+                                                        </div>
+                                                        <div class="col-lg-4 from-right animate-right">
+                                <div class="inner">
+                                    <img src="https://cms.smile-mc.co.uk/assets/Meenal/smile/942113638.jpg" alt="">
+                                </div>
+                            </div>
+                                                        </div>
+
+
+                 <div id="Div_1" class="ascunde">
+                                                        <div class="row justify-content-evenly">
+                                                                <div class="col-lg-4 animate-left">
+                                    <div class="inner">
+                                        <img src="https://cms.smile-mc.co.uk/assets/Meenal/smile/1464032051.jpg" alt="">
+                                    </div>
+                                </div>
+                                                                <div class="col-lg-4 animate-right">
+                                    <div class="inner">
+                                        <img src="https://cms.smile-mc.co.uk/assets/Meenal/smile/1969622401.jpg" alt="">
+                                    </div>
+                                </div>
+                                                                </div>
+ 
+
+                    </div>
+                
+                 <div class="btn-div">
+                        <button onclick="Show_Div(Div_1)" id="show-coures">Load More</button>
+                 </div>
+                            </div>
+</article>
+
+</main>
+
+
+
+<footer>
+    <div class="wrap">
+        <p class="text-center">© <span id="yearFooter">2024</span> DR MEENAL PATEL - ALL RIGHTS RESERVED / SITE LAST UPDATED 31/12/2023 <span> &nbsp; |  &nbsp; <a href="privacy-policy.php" style="color:#161c2f">PRIVACY &amp; COOKIE POLICY</a></span></p>
+<!--        <p class="text-center mb-0"> <a href="privacy-policy.php" style="color:#161c2f">PRIVACY &amp; COOKIE POLICY</a></p>-->
+    </div>
+</footer>
+
+
+        <!-- JAVASCRIPT FILES LINK -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    $("#puts-need-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 3000, // Changed to a faster timing (3 seconds)
+        items: 1, // Ensures only one item is shown at a time
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+});
+    </script>
+    <!-- kkkkkkkkkkkkkkkkkkkkkkkkppppppppppppppppp -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+     <!-- ppppppppppppppppppppppppppppppppppppppppp -->
+
+
+<!-- preloader -->
+ <script>
+$(window).on('load', function() {
+    $('#preloader-Bg').delay(50).fadeOut('fast'); 
+    $('html').css({
+        'overflow-y': 'auto'
+    });
+});
+ 
+</script>
+
+
+
+</body>
+</html>
